@@ -111,9 +111,10 @@ public class MyThread extends Thread {
                         user_stats += "Average Distance: " + avg_stats.get(1).getTotalDistance() + " km\n";
                         user_stats += "Average Elevation: " + avg_stats.get(1).getTotalelevation() + " meters\n";
 
-                        MainActivity.rslts_tobeshown=user_stats;
+                        MainActivity.results = user_stats;
 
                         Log.e("user stats", user_stats);
+                        file.delete();
 
                         break;
                     } catch (ClassNotFoundException e) {

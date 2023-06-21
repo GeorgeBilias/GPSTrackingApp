@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,11 +21,13 @@ public class MainActivity3 extends AppCompatActivity {
 
         TextView tx = findViewById(R.id.final_rslts);
         Button back = findViewById(R.id.back_button);
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.click);
 
-        tx.setText(MainActivity.rslts_tobeshown);
+        tx.setText(MainActivity.results);
 
         back.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                mp.start();
                 Intent intent = new Intent(MainActivity3.this,MainActivity.class);
                 startActivity(intent);
             }
