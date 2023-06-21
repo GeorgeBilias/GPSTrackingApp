@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -20,7 +21,7 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         TextView tx = findViewById(R.id.final_rslts);
-        Button back = findViewById(R.id.back_button);
+        ImageButton back = findViewById(R.id.back_button);
         final MediaPlayer mp = MediaPlayer.create(this,R.raw.click);
 
         tx.setText(MainActivity.results);
