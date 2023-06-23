@@ -18,6 +18,7 @@ public class MainActivity2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
         button3 = findViewById(R.id.button3);
         final MediaPlayer mp = MediaPlayer.create(this,R.raw.click);
         textViewRouteStats = findViewById(R.id.textViewRouteStats); // Replace with the actual id of your TextView
@@ -37,4 +38,5 @@ public class MainActivity2 extends Activity {
         // Set the route_stats_string as the text for the TextView
         textViewRouteStats.setText(routeStats);
     }
+
 }

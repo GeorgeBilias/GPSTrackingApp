@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button button2;
 
+
+
     public static String results;
 
     @Override
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button2 = findViewById(R.id.button2);
+
         final MediaPlayer mp = MediaPlayer.create(this,R.raw.click);
         button2.setOnClickListener(v -> {
             mp.start();
