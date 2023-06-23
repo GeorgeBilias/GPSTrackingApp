@@ -126,17 +126,17 @@ public class MyThread extends Thread {
                         user_stats += "Average Elevation: " + avg_stats.get(3).getTotalelevation() + " meters\n";
 
                         if (avg_stats.get(4).getTotalTime()<0){
-                            user_stats += "\nYou have exercised "+String.format("%.2f", avg_stats.get(4).getTotalTime())+"% less than the Average";
+                            user_stats += "\nYou have exercised "+String.format("%.2f", Math.abs(avg_stats.get(4).getTotalTime()))+"% less than the Average";
                         }else{
                             user_stats += "\nYou have exercised "+String.format("%.2f", avg_stats.get(4).getTotalTime())+"% more than the Average";
                         }
                         if (avg_stats.get(4).getTotalDistance()<0){
-                            user_stats += "\nYou have travelled "+String.format("%.2f", avg_stats.get(4).getTotalDistance())+"% less than the Average";
+                            user_stats += "\nYou have travelled "+String.format("%.2f", Math.abs(avg_stats.get(4).getTotalDistance()))+"% less than the Average";
                         }else{
                             user_stats += "\nYou have travelled "+String.format("%.2f", avg_stats.get(4).getTotalDistance())+"% more than the Average";
                         }
                         if (avg_stats.get(4).getTotalelevation()<0){
-                            user_stats += "\nYou have elevated "+String.format("%.2f", avg_stats.get(4).getTotalelevation())+"% less than the Average";
+                            user_stats += "\nYou have elevated "+String.format("%.2f", Math.abs(avg_stats.get(4).getTotalelevation()))+"% less than the Average";
                         }else{
                             user_stats += "\nYou have elevated "+String.format("%.2f", avg_stats.get(4).getTotalelevation())+"% more than the Average";
                         }
