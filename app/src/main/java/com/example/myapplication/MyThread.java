@@ -101,15 +101,26 @@ public class MyThread extends Thread {
                         ArrayList<resultInfo> avg_stats = (ArrayList<resultInfo>) in.readObject();
 
                         String user_stats;
-                        user_stats = "\nUser stats: \n";
-                        user_stats += "Average Exercise Time: " + avg_stats.get(0).getTotalTime() + " sec\n";
-                        user_stats += "Average Distance Time: " + avg_stats.get(0).getTotalDistance() + " km\n";
-                        user_stats += "Average Elevation Time: " + avg_stats.get(0).getTotalelevation() + " meters\n\n";
 
-                        user_stats += "Global Average Stats: \n";
+                        user_stats = "\nUser Total stats: \n";
+                        user_stats += "Total Exercise Time: " + avg_stats.get(0).getTotalTime() + " sec\n";
+                        user_stats += "Total Distance Time: " + avg_stats.get(0).getTotalDistance() + " km\n";
+                        user_stats += "Total Elevation Time: " + avg_stats.get(0).getTotalelevation() + " meters\n\n";
+
+                        user_stats += "\nUser Average stats: \n";
                         user_stats += "Average Exercise Time: " + avg_stats.get(1).getTotalTime() + " sec\n";
-                        user_stats += "Average Distance: " + avg_stats.get(1).getTotalDistance() + " km\n";
-                        user_stats += "Average Elevation: " + avg_stats.get(1).getTotalelevation() + " meters\n";
+                        user_stats += "Average Distance Time: " + avg_stats.get(1).getTotalDistance() + " km\n";
+                        user_stats += "Average Elevation Time: " + avg_stats.get(1).getTotalelevation() + " meters\n\n";
+
+                        user_stats += "Global Average Route Stats: \n";
+                        user_stats += "Average Exercise Time: " + avg_stats.get(2).getTotalTime() + " sec\n";
+                        user_stats += "Average Distance: " + avg_stats.get(2).getTotalDistance() + " km\n";
+                        user_stats += "Average Elevation: " + avg_stats.get(2).getTotalelevation() + " meters\n";
+
+                        user_stats += "\nGlobal Average Users Stats: \n";
+                        user_stats += "Average Exercise Time: " + avg_stats.get(3).getTotalTime() + " sec\n";
+                        user_stats += "Average Distance: " + avg_stats.get(3).getTotalDistance() + " km\n";
+                        user_stats += "Average Elevation: " + avg_stats.get(3).getTotalelevation() + " meters\n";
 
                         MainActivity.results = user_stats;
 
