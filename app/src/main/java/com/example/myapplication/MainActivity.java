@@ -16,7 +16,9 @@ import android.os.Looper;
 import android.os.Message;
 import android.provider.OpenableColumns;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     Button menuButton;
 
     Button button2;
-
 
 
     public static String results;
