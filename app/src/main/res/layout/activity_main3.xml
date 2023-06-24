@@ -10,8 +10,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="white"
-        android:text="STATISTICS"
+        android:hint="@string/white"
+        android:text="@string/statistics"
         android:fontFamily="@font/font2"
         style="@style/TextNew"
         android:textColorHint="#FFFFFF"
@@ -22,14 +22,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
-
+        app:layout_constraintVertical_bias="0.047"/>
 
     <TextView
         android:id="@+id/final_rslts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/textview"
         android:textStyle="bold"
         android:fontFamily="@font/font2"
         style="@style/TextNew"
@@ -46,6 +45,7 @@
         android:layout_width="50dp"
         android:layout_height="46dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/back_button"
         android:padding="8dp"
         android:scaleType="centerInside"
         android:src="@drawable/button"
@@ -54,5 +54,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,RedundantDescriptionCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,24 +11,25 @@
         android:id="@+id/button3"
         android:layout_width="50dp"
         android:layout_height="46dp"
-        android:text=""
         android:background="@android:color/transparent"
+        android:contentDescription="@string/back_button"
         android:padding="8dp"
         android:scaleType="centerInside"
         android:src="@drawable/button"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck,RedundantDescriptionCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textViewRouteStats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:text="Placeholder Text"
         android:textStyle="bold"
         android:fontFamily="@font/font2"
         style="@style/TextNew"
@@ -37,8 +38,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.365" />
-
-
 
     <TextView
         android:id="@+id/userStatsTextView"
@@ -59,8 +58,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="white"
-        android:text="ROUTE STATISTICS"
+        android:text="@string/route_statistics"
         android:textStyle="bold"
         android:fontFamily="@font/font2"
         style="@style/TextNew"
