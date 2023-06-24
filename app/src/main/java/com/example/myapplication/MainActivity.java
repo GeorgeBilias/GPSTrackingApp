@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         label = findViewById(R.id.label);
-        label.setText("ACTIVITY TRACKER");
+
     }
 
     private void openFilePicker() {
