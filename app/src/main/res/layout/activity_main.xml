@@ -12,8 +12,8 @@
     <TextView
         android:id="@+id/label"
         style="@style/TextNew"
-        android:layout_width="411dp"
-        android:layout_height="146dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:fontFamily="@font/font"
         android:gravity="center"
         android:text="ACTIVITY TRACKER"
@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
@@ -61,6 +61,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/label"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_no_background" />
 
 
