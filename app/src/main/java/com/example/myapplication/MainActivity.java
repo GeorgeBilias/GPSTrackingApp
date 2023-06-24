@@ -103,6 +103,9 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("cache_file_path", cacheFile.getPath());
                         // Perform your desired operations with the cache file
                         // ...
+                        LoadingDialog loadingDialog = new LoadingDialog(MainActivity.this);
+
+                        loadingDialog.startLoadingDialog();
                         MyThread t1 = new MyThread(cacheFilePath, handler, label, label2, getApplicationContext());
                         t1.start();
                     }
