@@ -91,10 +91,10 @@ public class MyThread extends Thread {
                         String route_stats_string;
                         route_stats_string = "CURRENT ROUTE ACTIVITY STATS: \n";
 
-                        route_stats_string += "\nTotal distance: " + route_stats.getTotalDistance() + " km\n";
-                        route_stats_string += "Average Speed: " + route_stats.getAverageSpeed() * 60 * 60 + " km/h\n";
-                        route_stats_string += "Total Elevation: " + route_stats.getTotalelevation() + " m\n";
-                        route_stats_string += ("Total Time: " + route_stats.getTotalTime()/60 + " mins");
+                        route_stats_string += "\nTotal distance: " + String.format("%.2f",route_stats.getTotalDistance()) + " km\n";
+                        route_stats_string += "Average Speed: " + String.format("%.2f",route_stats.getAverageSpeed() * 60 * 60) + " km/h\n";
+                        route_stats_string += "Total Elevation: " + String.format("%.2f",route_stats.getTotalelevation()) + " m\n";
+                        route_stats_string += ("Total Time: " + String.format("%.2f",route_stats.getTotalTime()/60) + " mins");
                         Intent intent = new Intent(context, MainActivity2.class);
 
                         intent.putExtra("route_stats", route_stats_string);
@@ -107,24 +107,24 @@ public class MyThread extends Thread {
                         String user_stats;
 
                         user_stats = "\nUSER TOTAL STATS: \n";
-                        user_stats += "Total Exercise Time: " + avg_stats.get(0).getTotalTime()/60 + " mins\n";
-                        user_stats += "Total Distance Time: " + avg_stats.get(0).getTotalDistance() + " km\n";
-                        user_stats += "Total Elevation Time: " + avg_stats.get(0).getTotalelevation() + " meters\n\n";
+                        user_stats += "Total Exercise Time: " + String.format("%.2f",avg_stats.get(0).getTotalTime()/60) + " mins\n";
+                        user_stats += "Total Distance Time: " + String.format("%.2f",avg_stats.get(0).getTotalDistance()) + " km\n";
+                        user_stats += "Total Elevation Time: " + String.format("%.2f",avg_stats.get(0).getTotalelevation()) + " meters\n\n";
 
                         user_stats += "\nUSER AVERAGE STATS: \n";
-                        user_stats += "\nAverage Exercise Time: " + avg_stats.get(1).getTotalTime()/60 + " mins\n";
-                        user_stats += "Average Distance Time: " + avg_stats.get(1).getTotalDistance() + " km\n";
-                        user_stats += "Average Elevation Time: " + avg_stats.get(1).getTotalelevation() + " meters\n\n";
+                        user_stats += "\nAverage Exercise Time: " + String.format("%.2f",avg_stats.get(1).getTotalTime()/60) + " mins\n";
+                        user_stats += "Average Distance Time: " + String.format("%.2f",avg_stats.get(1).getTotalDistance()) + " km\n";
+                        user_stats += "Average Elevation Time: " + String.format("%.2f",avg_stats.get(1).getTotalelevation()) + " meters\n\n";
 
                         user_stats += "GLOBAL AVERAGE ROUTE STATS: \n";
-                        user_stats += "\nAverage Exercise Time: " + avg_stats.get(2).getTotalTime()/60 + " mins\n";
-                        user_stats += "Average Distance: " + avg_stats.get(2).getTotalDistance() + " km\n";
-                        user_stats += "Average Elevation: " + avg_stats.get(2).getTotalelevation() + " meters\n";
+                        user_stats += "\nAverage Exercise Time: " + String.format("%.2f",avg_stats.get(2).getTotalTime()/60) + " mins\n";
+                        user_stats += "Average Distance: " + String.format("%.2f",avg_stats.get(2).getTotalDistance()) + " km\n";
+                        user_stats += "Average Elevation: " + String.format("%.2f",avg_stats.get(2).getTotalelevation()) + " meters\n";
 
                         user_stats += "\nGLOBAL AVERAGE USER STATS: \n";
-                        user_stats += "\nAverage Exercise Time: " + avg_stats.get(3).getTotalTime()/60 + " mins\n";
-                        user_stats += "Average Distance: " + avg_stats.get(3).getTotalDistance() + " km\n";
-                        user_stats += "Average Elevation: " + avg_stats.get(3).getTotalelevation() + " meters\n";
+                        user_stats += "\nAverage Exercise Time: " + String.format("%.2f",avg_stats.get(3).getTotalTime()/60) + " mins\n";
+                        user_stats += "Average Distance: " + String.format("%.2f",avg_stats.get(3).getTotalDistance()) + " km\n";
+                        user_stats += "Average Elevation: " + String.format("%.2f",avg_stats.get(3).getTotalelevation()) + " meters\n";
 
                         if (avg_stats.get(4).getTotalTime()<0){
                             user_stats += "\nYou have exercised "+String.format("%.2f", Math.abs(avg_stats.get(4).getTotalTime()))+"% less than the Average";
