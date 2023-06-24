@@ -16,7 +16,7 @@
         android:fontFamily="@font/font"
         android:gravity="center"
         android:text="ACTIVITY TRACKER"
-        android:textColor="#85CF34"
+        android:textColor="@color/light_green"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Small"
+        style="@style/ButtonStyle"
         android:layout_width="302dp"
         android:layout_height="52dp"
         android:text="Show Statistics"
@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/menuButton"
-        style="@style/Widget.AppCompat.Button.Small"
+        style="@style/ButtonStyle"
         android:layout_width="191dp"
         android:layout_height="48dp"
         android:text="upload"
