@@ -7,14 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class MainActivity2 extends Activity {
     ImageButton button3;
     TextView textViewRouteStats;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
@@ -37,6 +40,7 @@ public class MainActivity2 extends Activity {
 
         // Set the route_stats_string as the text for the TextView
         textViewRouteStats.setText(routeStats);
+
     }
 
 }
