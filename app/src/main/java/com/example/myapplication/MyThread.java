@@ -106,12 +106,12 @@ public class MyThread extends Thread {
 
                         String user_stats;
 
-                        user_stats = "\nUSER TOTAL STATS: \n";
+                        user_stats = "\n\nUSER TOTAL STATS: \n";
                         user_stats += "Total Exercise Time: " + String.format("%.2f",avg_stats.get(0).getTotalTime()/60) + " mins\n";
                         user_stats += "Total Distance Time: " + String.format("%.2f",avg_stats.get(0).getTotalDistance()) + " km\n";
                         user_stats += "Total Elevation Time: " + String.format("%.2f",avg_stats.get(0).getTotalelevation()) + " meters\n\n";
 
-                        user_stats += "\nUSER AVERAGE STATS: \n";
+                        user_stats += "USER AVERAGE STATS: \n";
                         user_stats += "\nAverage Exercise Time: " + String.format("%.2f",avg_stats.get(1).getTotalTime()/60) + " mins\n";
                         user_stats += "Average Distance Time: " + String.format("%.2f",avg_stats.get(1).getTotalDistance()) + " km\n";
                         user_stats += "Average Elevation Time: " + String.format("%.2f",avg_stats.get(1).getTotalelevation()) + " meters\n\n";
