@@ -13,4 +13,7 @@
     <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/light_green</item> <!-- Default text color -->
     </style>
+    <style name="TextNew" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_green</item> <!-- Default text color -->
+    </style>
 </resources>
