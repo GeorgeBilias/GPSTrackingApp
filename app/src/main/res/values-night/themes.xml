@@ -10,8 +10,11 @@
         <item name="android:textColor">@color/light_green</item>
     </style>
 
-    <style name="TextNew" parent="TextAppearance.AppCompat">
+    <style name="TextNew2" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/light_green</item>
+    </style>
+    <style name="TextNew" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />

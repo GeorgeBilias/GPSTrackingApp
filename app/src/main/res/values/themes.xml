@@ -13,6 +13,9 @@
     <style name="TextNew" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/dark_blue</item>
     </style>
+    <style name="TextNew2" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
 

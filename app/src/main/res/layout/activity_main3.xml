@@ -8,37 +8,37 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/TextNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font2"
         android:hint="@string/white"
         android:text="@string/statistics"
-        android:fontFamily="@font/font2"
-        style="@style/TextNew"
         android:textColorHint="#FFFFFF"
-        android:textStyle="bold"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047"/>
+        app:layout_constraintVertical_bias="0.023" />
 
     <TextView
         android:id="@+id/final_rslts"
+        style="@style/TextNew"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textview"
-        android:textStyle="bold"
         android:fontFamily="@font/font2"
-        style="@style/TextNew"
+        android:gravity="center"
+        android:text="@string/textview"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.334" />
 
     <ImageButton
         android:id="@+id/back_button"
