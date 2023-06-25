@@ -5,9 +5,9 @@
     <string name="upload">upload</string>
     <string name="app_logo">app logo</string>
     <string name="back_button">back button</string>
-    <string name="route_statistics">ROUTE STATISTICS</string>
+    <string name="route_statistics"><u>ROUTE STATISTICS</u></string>
     <string name="white">white</string>
     <string name="textview">TextView</string>
     <string name="fetching_results">Fetching Results..</string>
-    <string name="statistics">STATISTICS</string>
+    <string name="statistics"><u>STATISTICS</u></string>
 </resources>
